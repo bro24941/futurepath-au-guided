@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Australian cybersecurity opportunities and build a pathway you can review.">
+  <title>FuturePath AU | Cybersecurity pathways</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <span class="wordmark">FuturePath AU</span>
+      <button id="clear" class="text-button" type="button">Clear my data</button>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <!-- The goal and consent share one form, so every request passes the same checks. -->
+    <section id="goal-view" class="goal-view" aria-labelledby="goal-title">
+      <div class="intro">
+        <h1 id="goal-title" tabindex="-1">Find your next step<br class="wide-break"> in cybersecurity.</h1>
+        <p>Explore Australian training and career options. Build a plan you can check and change.</p>
+      </div>
+
+      <form id="profile-form" autocomplete="off">
+        <label for="goal">What would you like to do?</label>
+        <div class="goal-input">
+          <textarea id="goal" minlength="3" maxlength="500" rows="2" required
+            placeholder="I’d like to learn network security" aria-describedby="goal-help"></textarea>
+          <button id="generate" type="submit">Explore pathway <span aria-hidden="true">→</span></button>
+        </div>
+        <p id="goal-help" class="hint">Use a made-up goal without names or contact details.</p>
+        <div class="actions examples">
+          <button id="example-happy" class="text-button" type="button">Try a course example</button>
+          <button id="example-uncertain" class="text-button" type="button">Try a scholarship example</button>
+          <button id="back-to-plan" class="text-button" type="button" hidden>Back to results</button>
+        </div>
+
+        <details id="profile-details" class="fold">
+          <summary>Add background <span class="hint">Optional</span></summary>
+          <p class="hint">Add only what you know about the fictitious profile.</p>
+          <fieldset>
+            <legend>Skills</legend>
+            <label class="check"><input id="skills-known" type="checkbox"> Use the skills selected below for this profile</label>
+            <div id="skill-options" class="fields skill-fields"></div>
+          </fieldset>
+          <details id="requirements-details" class="fold inner-fold">
+            <summary>Study, work and eligibility details</summary>
+            <div id="profile-fields" class="fields"></div>
+            <label for="identity">Indigenous identity (optional)</label>
+            <select id="identity" aria-describedby="identity-help">
+              <option value="prefer_not_to_say">Prefer not to say</option>
+              <option value="yes">Aboriginal and/or Torres Strait Islander</option>
+              <option value="no">Neither</option>
+            </select>
+            <p id="identity-help" class="hint">Used only to show whether a provider lists a cohort requirement that applies. It never changes which opportunities appear or how they’re ranked. We collect no proof of identity.</p>
+          </details>
+        </details>
+
+        <fieldset class="consent">
+          <legend>Before you start</legend>
+          <p class="hint">This is a student demo. Check application details with the provider.</p>
+          <p class="hint">If Gemini is enabled, Google may use free-tier inputs and outputs to improve its products.</p>
+          <details class="privacy-details">
+            <summary>How your information is used</summary>
+            <p>Gemini can receive selected cybersecurity terms and a short goal classification. Your original wording and profile stay on your device.</p>
+            <p>This prototype has no community endorsement. Find out about applications and eligibility directly from the provider.</p>
+          </details>
+          <label class="check"><input id="adult" type="checkbox" required> I am 18 or older.</label>
+          <label class="check"><input id="fiction" type="checkbox" required> I’ll use a made-up adult profile and leave out real personal details.</label>
+          <label class="check"><input id="privacy" type="checkbox" required> I understand the privacy notice and the limits of this demo.</label>
+        </fieldset>
+        <noscript>Turn on JavaScript in your browser to use the pathway form.</noscript>
+      </form>
+    </section>
+
+    <p id="progress" class="feedback" role="status" aria-live="polite"></p>
+    <p id="error" class="feedback" role="alert"></p>
+
+    <div id="results" hidden>
+      <div class="results-nav actions">
+        <button id="change-goal" class="text-button" type="button">← Change goal</button>
+        <p id="goal-context" class="hint"></p>
+      </div>
+      <section class="result-hero" aria-labelledby="results-title">
+        <div>
+          <h1 id="results-title" tabindex="-1">Your next step<br class="wide-break"> in cybersecurity.</h1>
+          <p id="skill-summary"></p>
+        </div>
+        <div id="next-step" class="next-step">
+          <p class="next-label">Start here</p>
+          <h2 id="next-title"></h2>
+          <p id="next-detail"></p>
+          <button id="open-plan" type="button">Review your plan <span aria-hidden="true">↓</span></button>
+        </div>
+      </section>
+      <div id="notices"></div>
+
+      <div class="result-grid">
+        <section class="opportunities" aria-labelledby="options-title">
+          <h2 id="options-title">Opportunities</h2>
+          <p id="as-of" class="hint"></p>
+          <div id="cards" class="cards"></div>
+        </section>
+
+        <section id="plan" class="plan" aria-labelledby="plan-title">
+          <h2 id="plan-title" tabindex="-1">Your plan</h2>
+          <p id="plan-summary" class="hint"></p>
+          <div id="plan-body">
+            <details id="plan-details" class="fold">
+              <summary>View steps and review</summary>
+              <div class="actions">
+                <button id="edit-plan" class="secondary" type="button" aria-pressed="false">Edit steps</button>
+                <button id="restore" class="text-button" type="button" hidden>Restore suggested steps</button>
+              </div>
+              <p id="dependency-warning" role="status"></p>
+              <ol id="timeline" class="timeline"></ol>
+              <p id="decision" class="decision" role="status" aria-live="polite">Ready for your review</p>
+              <div class="actions">
+                <button id="approve" type="button">Approve plan</button>
+              </div>
+              <details id="reject-details" class="inner-fold">
+                <summary>Reject plan</summary>
+                <label for="reject-reason">Why are you rejecting this plan?</label>
+                <textarea id="reject-reason" maxlength="300" rows="2" autocomplete="off" placeholder="For example, I need to check the next intake."></textarea>
+                <button id="reject" class="secondary" type="button">Confirm rejection</button>
+              </details>
+              <div class="actions export-actions">
+                <button id="print" class="text-button" type="button">Print</button>
+                <button id="export" class="text-button" type="button">Download plan</button>
+                <button id="calendar" class="text-button" type="button" aria-describedby="calendar-help">Download deadlines</button>
+              </div>
+              <p id="calendar-help" class="hint"></p>
+            </details>
+          </div>
+          <details id="trace-details" class="fold trace-details">
+            <summary>How this plan was made</summary>
+            <p class="hint">See what each of the six agents did, including where Gemini was used.</p>
+            <div id="trace" class="trace"></div>
+          </details>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="shell footer">
+    <p>FuturePath AU · A Group B prototype for Aboriginal and Torres Strait Islander students and job seekers.</p>
+    <p id="service-status" role="status"></p>
+  </footer>
+</body>
+</html>

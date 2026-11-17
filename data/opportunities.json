@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "fp-01",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "TAFE NSW",
+    "category": "course",
+    "location": "NSW",
+    "description": "Cybersecurity study covering network protection and incident response.",
+    "prerequisites": [
+      {
+        "id": "it-background",
+        "label": "Certificate III or higher in IT, or equivalent industry experience",
+        "mode": "any",
+        "checks": [
+          {
+            "field": "it_certificate",
+            "value": true
+          },
+          {
+            "field": "it_experience",
+            "value": true
+          }
+        ],
+        "evidence_note": "Entry section specifies an IT qualification or equivalent industry experience."
+      },
+      {
+        "id": "network-os",
+        "label": "Networking and Linux/Windows command-line proficiency",
+        "checks": [
+          {
+            "field": "network_os",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Networking and Linux/Windows command-line proficiency"
+      },
+      {
+        "id": "campus",
+        "label": "Confirm any additional campus entry requirements",
+        "checks": [],
+        "evidence_note": "Confirm any additional campus entry requirements"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.tafensw.edu.au/course-areas/information-and-communication-technology/courses/HEAL--22603VIC-01",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Qualification 22603VIC. The page showed no study options when checked. Fees and intake require confirmation.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-02",
+    "title": "Certificate III in Information Technology",
+    "provider": "TAFE NSW",
+    "category": "course",
+    "location": "NSW",
+    "description": "Foundational IT study that can prepare a learner for later cybersecurity training.",
+    "prerequisites": [
+      {
+        "id": "general-entry",
+        "label": "No qualification-wide entry requirements",
+        "checks": [],
+        "evidence_note": "No qualification-wide entry requirements",
+        "no_formal_requirement": true
+      },
+      {
+        "id": "campus",
+        "label": "Some campuses may have extra entry requirements",
+        "checks": [],
+        "evidence_note": "Some campuses may have extra entry requirements"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.tafensw.edu.au/course-areas/information-and-communication-technology/courses/certificate-iii-in-information-technology--ICT30120-01",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "ICT30120. Basic computer skills and Year 10 LLN are recommendations, not stated universal admission rules.",
+    "availability": "unknown",
+    "skill_tags": [
+      "digital_literacy",
+      "networking"
+    ]
+  },
+  {
+    "id": "fp-03",
+    "title": "ASD Cadetship Program",
+    "provider": "Australian Signals Directorate",
+    "category": "cadetship",
+    "location": "Australia; confirm placement location",
+    "description": "Paid experience alongside STEM study, with work relevant to national security and technology.",
+    "prerequisites": [
+      {
+        "id": "citizenship",
+        "label": "Australian citizenship",
+        "checks": [
+          {
+            "field": "citizen",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Australian citizenship"
+      },
+      {
+        "id": "stem",
+        "label": "Currently studying a STEM degree at an Australian university",
+        "checks": [
+          {
+            "field": "stem_enrolled",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Currently studying a STEM degree at an Australian university"
+      },
+      {
+        "id": "semester",
+        "label": "At least one semester completed when applying",
+        "checks": [
+          {
+            "field": "semesters_completed",
+            "operator": "gte",
+            "value": 1
+          }
+        ],
+        "evidence_note": "At least one semester completed when applying"
+      },
+      {
+        "id": "remaining",
+        "label": "At least 12 months of study remaining at commencement",
+        "checks": [
+          {
+            "field": "months_remaining",
+            "operator": "gte",
+            "value": 12
+          }
+        ],
+        "evidence_note": "At least 12 months of study remaining at commencement"
+      },
+      {
+        "id": "credit",
+        "label": "Hold and maintain a minimum credit average",
+        "checks": [
+          {
+            "field": "credit_average",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Hold and maintain a minimum credit average"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": "2028 program; applications expected early 2027, exact dates unconfirmed",
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.asd.gov.au/careers/im-starting-my-career",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "verified_against_source",
+    "evidence_note": "Cadetship eligibility bullets and closed 2027 applications checked.",
+    "notes": "2027 applications closed. No exact 2028 deadline published. Not an Indigenous-only program.",
+    "availability": "closed",
+    "skill_tags": [
+      "networking",
+      "security_basics",
+      "python"
+    ]
+  },
+  {
+    "id": "fp-04",
+    "title": "ASD Apprenticeship Program: technical stream",
+    "provider": "Australian Signals Directorate",
+    "category": "apprenticeship",
+    "location": "Australia; confirm placement location",
+    "description": "ICT networking or programming study and workplace experience can support a later cybersecurity pathway.",
+    "prerequisites": [
+      {
+        "id": "citizenship",
+        "label": "Australian citizenship",
+        "checks": [
+          {
+            "field": "citizen",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Australian citizenship"
+      },
+      {
+        "id": "year12",
+        "label": "Year 12 or equivalent before commencement",
+        "checks": [
+          {
+            "field": "year12",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Year 12 or equivalent before commencement"
+      },
+      {
+        "id": "security",
+        "label": "Prepared to undergo a comprehensive security assessment",
+        "checks": [
+          {
+            "field": "security_assessment",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Prepared to undergo a comprehensive security assessment"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": "2028 program; exact start unconfirmed",
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.asd.gov.au/careers/im-starting-my-career",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "verified_against_source",
+    "evidence_note": "Apprenticeship eligibility and technical stream checked; 2027 applications closed.",
+    "notes": "This is an ICT apprenticeship, not a guaranteed cybersecurity role. Security assessment readiness is not clearance approval.",
+    "availability": "closed",
+    "skill_tags": [
+      "networking",
+      "python"
+    ]
+  },
+  {
+    "id": "fp-05",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "TasTAFE",
+    "category": "course",
+    "location": "Tasmania",
+    "description": "Practical cybersecurity training for people developing network protection and security awareness skills.",
+    "prerequisites": [
+      {
+        "id": "entry",
+        "label": "No essential entry requirements",
+        "checks": [],
+        "evidence_note": "No essential entry requirements",
+        "no_formal_requirement": true
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Contact TasTAFE about the current intake.",
+      "Discuss goals and course requirements with the provider before an offer."
+    ],
+    "source_url": "https://www.tastafe.tas.edu.au/courses/course/22603vic",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "verified_against_source",
+    "evidence_note": "Entry section states no essential requirements; pre-offer discussion still applies.",
+    "notes": "No essential academic prerequisites does not guarantee a place. Provider discussion and fees still apply.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-06",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "TAFE Queensland",
+    "category": "course",
+    "location": "Queensland",
+    "description": "Cybersecurity training offered through several Queensland study modes.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://tafeqld.edu.au/course/18/18451/certificate-iv-in-cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Domestic skills checks and intake-specific conditions need confirmation; do not infer Free TAFE eligibility.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-07",
+    "title": "Graduate Diploma in Cyber Security",
+    "provider": "TAFE Queensland",
+    "category": "course",
+    "location": "Queensland",
+    "description": "Postgraduate study combining technical cybersecurity with policy and governance.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://tafeqld.edu.au/course/19/19381/graduate-diploma-in-cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Advanced study, not an assumed beginner entry route. Academic and language admission conditions require checking.",
+    "availability": "unknown",
+    "skill_tags": [
+      "security_basics",
+      "risk_management"
+    ]
+  },
+  {
+    "id": "fp-08",
+    "title": "Master of Cyber Security",
+    "provider": "TAFE Queensland",
+    "category": "course",
+    "location": "Queensland",
+    "description": "Advanced cybersecurity study for technical and governance work.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://tafeqld.edu.au/course/19/19383/master-of-cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Postgraduate admission requirements and current intake must be confirmed. Not an assumed beginner option.",
+    "availability": "unknown",
+    "skill_tags": [
+      "security_basics",
+      "risk_management"
+    ]
+  },
+  {
+    "id": "fp-09",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "Holmesglen",
+    "category": "course",
+    "location": "Victoria",
+    "description": "Cybersecurity study through Holmesglen's vocational program.",
+    "prerequisites": [
+      {
+        "id": "age",
+        "label": "At least 18 years old",
+        "checks": [
+          {
+            "field": "age",
+            "operator": "gte",
+            "value": 18
+          }
+        ],
+        "evidence_note": "At least 18 years old"
+      },
+      {
+        "id": "admission",
+        "label": "Year 12 or mature-age entry and provider skills assessment require confirmation",
+        "checks": [],
+        "evidence_note": "Year 12 or mature-age entry and provider skills assessment require confirmation"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.holmesglen.edu.au/explore-courses/computing-and-it/cyber-security/vocational-education/certificate-iv-in-cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "No current closing date has been confirmed. This is not an offer or admission decision.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-10",
+    "title": "Certificate IV in Cyber Security traineeship",
+    "provider": "Holmesglen",
+    "category": "traineeship",
+    "location": "Victoria",
+    "description": "A listed cybersecurity traineeship lead whose current course-guide details could not be retrieved.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.holmesglen.edu.au/content/dam/holmesglen/pdf/about-us/our-institute/publications-and-reports/2026-Course-Guide-05-2025.pdf",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "source_unavailable",
+    "evidence_note": "Course-guide link returned 404; offering and requirements need provider confirmation.",
+    "notes": "Search indexing identified this lead, but the source could not be opened. Not confirmed as currently offered.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-11",
+    "title": "Certificate IV in Information Technology: Cyber Security and Artificial Intelligence",
+    "provider": "Australian College of Information Technology",
+    "category": "traineeship",
+    "location": "Online and workplace; confirm state availability",
+    "description": "Workplace training includes security operations and identity protection.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://acit.edu.au/certificate-iv-in-information-technology-cyber-security-artificial-intelligence/",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Traineeship offering confirmed on provider page. Employer, contract, funding and admission conditions remain unchecked.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-12",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "TAFE SA",
+    "category": "course",
+    "location": "South Australia",
+    "description": "Cybersecurity vocational study listed by TAFE SA.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.tafesa.edu.au/courses/information-technology/cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Course existence checked on provider subject page; specific entry requirements and current intake not confirmed.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-13",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "RMIT University",
+    "category": "course",
+    "location": "Melbourne City and online",
+    "description": "Training in network vulnerabilities, security tools and incident response.",
+    "prerequisites": [
+      {
+        "id": "academic",
+        "label": "No minimum academic entry requirements or prerequisite subjects",
+        "checks": [],
+        "evidence_note": "No minimum academic entry requirements or prerequisite subjects",
+        "no_formal_requirement": true
+      },
+      {
+        "id": "university",
+        "label": "Minimum university entry requirements still apply",
+        "checks": [],
+        "evidence_note": "Minimum university entry requirements still apply"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.rmit.edu.au/study-with-us/levels-of-study/vocational-study/certificates/certificate-iv-in-cyber-security-c4424",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Certificate III IT relates to possible Free TAFE funding, not a universal academic prerequisite.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-14",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "Box Hill Institute",
+    "category": "course",
+    "location": "Victoria",
+    "description": "A cybersecurity course lead awaiting readable provider details.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.boxhill.edu.au/courses/certificate-iv-in-cyber-security-cs423-d/",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "source_unavailable",
+    "evidence_note": "Provider page content unavailable to the source-checking tool.",
+    "notes": "Title identified in provider search listing. Entry rules, delivery and availability are unconfirmed.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-15",
+    "title": "Certificate IV in Cyber Security",
+    "provider": "Chisholm",
+    "category": "course",
+    "location": "Victoria",
+    "description": "Cybersecurity study with digital literacy and language requirements.",
+    "prerequisites": [
+      {
+        "id": "age",
+        "label": "Minimum age 18",
+        "checks": [
+          {
+            "field": "age",
+            "operator": "gte",
+            "value": 18
+          }
+        ],
+        "evidence_note": "Minimum age 18"
+      },
+      {
+        "id": "digital",
+        "label": "Capable digital literacy",
+        "checks": [
+          {
+            "field": "digital_literacy",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Capable digital literacy"
+      },
+      {
+        "id": "lln",
+        "label": "Provider language, literacy and numeracy requirements need confirmation",
+        "checks": [],
+        "evidence_note": "Provider language, literacy and numeracy requirements need confirmation"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.chisholm.edu.au/courses/certificate-iv/cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Certificate III IT is a Free TAFE funding condition, not a universal academic admission rule.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-16",
+    "title": "Bachelor of Information Technology (Cyber Security)",
+    "provider": "Chisholm",
+    "category": "course",
+    "location": "Dandenong, Victoria",
+    "description": "Degree-level IT study focused on cybersecurity.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.chisholm.edu.au/courses/bachelor-degree/bachelor-of-information-technology-cyber-security",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "Several academic and work-experience entry routes are published. Full alternative-route assessment is outside these rules.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking",
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-17",
+    "title": "Introduction to Cybersecurity",
+    "provider": "Cisco Networking Academy",
+    "category": "course",
+    "location": "Online",
+    "description": "Introductory cybersecurity learning lead listed by Cisco.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "source_unavailable",
+    "evidence_note": "Page requires JavaScript; substantive course details could not be read.",
+    "notes": "Do not assume enrolment availability, fees or prerequisites from the title.",
+    "availability": "unknown",
+    "skill_tags": [
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-18",
+    "title": "Networking Basics",
+    "provider": "Cisco Networking Academy",
+    "category": "course",
+    "location": "Online",
+    "description": "Networking foundations can support later cybersecurity learning.",
+    "prerequisites": [
+      {
+        "id": "provider-check",
+        "label": "Confirm the complete entry requirements with the provider",
+        "checks": [],
+        "evidence_note": "Confirm the complete entry requirements with the provider"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.netacad.com/courses/networking-basics",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "source_unavailable",
+    "evidence_note": "Page requires JavaScript; substantive course details could not be read.",
+    "notes": "Provider title confirmed; enrolment conditions and availability remain unconfirmed.",
+    "availability": "unknown",
+    "skill_tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "fp-19",
+    "title": "CSIRO Indigenous Scholarship in STEM and Medicine",
+    "provider": "Monash University",
+    "category": "scholarship",
+    "location": "Monash campuses in Australia",
+    "description": "Broad STEM scholarship support may be relevant to a qualifying IT degree.",
+    "prerequisites": [
+      {
+        "id": "citizenship",
+        "label": "Australian citizenship",
+        "checks": [
+          {
+            "field": "citizen",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Australian citizenship"
+      },
+      {
+        "id": "monash",
+        "label": "Study at Monash",
+        "checks": [
+          {
+            "field": "institution",
+            "operator": "eq",
+            "value": "Monash"
+          }
+        ],
+        "evidence_note": "Study at Monash"
+      },
+      {
+        "id": "commencing",
+        "label": "Commencing undergraduate STEM or medicine study",
+        "checks": [
+          {
+            "field": "commencing",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Commencing undergraduate STEM or medicine study"
+      },
+      {
+        "id": "atar",
+        "label": "ATAR of at least 85",
+        "checks": [
+          {
+            "field": "atar",
+            "operator": "gte",
+            "value": 85
+          }
+        ],
+        "evidence_note": "ATAR of at least 85"
+      },
+      {
+        "id": "current",
+        "label": "Confirm eligible degree and current award round",
+        "checks": [],
+        "evidence_note": "Confirm eligible degree and current award round"
+      }
+    ],
+    "eligible_cohorts": [
+      "First Nations"
+    ],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.monash.edu/study/fees-scholarships/scholarships/find-a-scholarship/csiro-indigenous-scholarship-in-stem-and-medicine-6225",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Eligibility read; page states not awarded in 2025.",
+    "notes": "Current availability is unclear. It is not a universal national cybersecurity scholarship.",
+    "availability": "unknown",
+    "skill_tags": [
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-20",
+    "title": "CSIRO Indigenous STEM Scholarship",
+    "provider": "Australian National University",
+    "category": "scholarship",
+    "location": "ANU, ACT",
+    "description": "Scholarship support for continuing domestic First Nations STEM undergraduates at ANU.",
+    "prerequisites": [
+      {
+        "id": "anu",
+        "label": "Enrolled at ANU",
+        "checks": [
+          {
+            "field": "institution",
+            "operator": "eq",
+            "value": "ANU"
+          }
+        ],
+        "evidence_note": "Enrolled at ANU"
+      },
+      {
+        "id": "continuing",
+        "label": "Continuing student",
+        "checks": [
+          {
+            "field": "commencing",
+            "operator": "eq",
+            "value": false
+          }
+        ],
+        "evidence_note": "Continuing student"
+      },
+      {
+        "id": "domestic",
+        "label": "Domestic student",
+        "checks": [
+          {
+            "field": "domestic",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Domestic student"
+      },
+      {
+        "id": "stem",
+        "label": "Enrolled in a STEM degree",
+        "checks": [
+          {
+            "field": "stem_enrolled",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Enrolled in a STEM degree"
+      },
+      {
+        "id": "level",
+        "label": "Undergraduate study",
+        "checks": [
+          {
+            "field": "study_level",
+            "operator": "eq",
+            "value": "undergraduate"
+          }
+        ],
+        "evidence_note": "Undergraduate study"
+      }
+    ],
+    "eligible_cohorts": [
+      "First Nations"
+    ],
+    "deadline": "2025-08-10",
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://study.anu.edu.au/scholarships/find-scholarship/csiro-indigenous-stem-scholarship",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Eligibility checked; displayed application period ended in August 2025.",
+    "notes": "Page also says open for applications, conflicting with its dated 2025 window. Treat as closed pending provider confirmation.",
+    "availability": "closed",
+    "skill_tags": [
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-21",
+    "title": "CSIRO Indigenous STEM Scholarship",
+    "provider": "Adelaide University",
+    "category": "scholarship",
+    "location": "Adelaide University, South Australia",
+    "description": "STEM scholarship support can include eligible technology study.",
+    "prerequisites": [
+      {
+        "id": "adelaide",
+        "label": "Enrolled at Adelaide University",
+        "checks": [
+          {
+            "field": "institution",
+            "operator": "eq",
+            "value": "Adelaide"
+          }
+        ],
+        "evidence_note": "Enrolled at Adelaide University"
+      },
+      {
+        "id": "citizenship",
+        "label": "Australian citizenship",
+        "checks": [
+          {
+            "field": "citizen",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Australian citizenship"
+      },
+      {
+        "id": "stem",
+        "label": "Enrolled in a STEM degree",
+        "checks": [
+          {
+            "field": "stem_enrolled",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Enrolled in a STEM degree"
+      },
+      {
+        "id": "level",
+        "label": "Undergraduate or postgraduate coursework study",
+        "mode": "any",
+        "checks": [
+          {
+            "field": "study_level",
+            "value": "undergraduate"
+          },
+          {
+            "field": "study_level",
+            "value": "postgraduate_coursework"
+          }
+        ],
+        "evidence_note": "Eligibility includes undergraduate and postgraduate coursework STEM study."
+      },
+      {
+        "id": "csp",
+        "label": "Commonwealth supported student",
+        "checks": [
+          {
+            "field": "commonwealth_supported",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "evidence_note": "Commonwealth supported student"
+      }
+    ],
+    "eligible_cohorts": [
+      "First Nations"
+    ],
+    "deadline": "2026-03-15",
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://adelaide.edu.au/study/scholarships/dom/csiro-indigenous-stem-scholarship/",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "verified_against_source",
+    "evidence_note": "Published eligibility and 15 March 2026 closing date checked.",
+    "notes": "Full-time or part-time study accepted. Selection is competitive and the recorded round is closed.",
+    "availability": "closed",
+    "skill_tags": [
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-22",
+    "title": "CSIRO Indigenous Australian STEM Scholarship",
+    "provider": "Queensland University of Technology",
+    "category": "scholarship",
+    "location": "QUT, Queensland",
+    "description": "Support for eligible full-time STEM coursework study, including information technology.",
+    "prerequisites": [
+      {
+        "id": "qut",
+        "label": "Enrolled at QUT",
+        "checks": [
+          {
+            "field": "institution",
+            "operator": "eq",
+            "value": "QUT"
+          }
+        ],
+        "evidence_note": "Enrolled at QUT"
+      },
+      {
+        "id": "residency",
+        "label": "Australian citizen or permanent resident; confirm residency evidence",
+        "checks": [],
+        "evidence_note": "Australian citizen or permanent resident; confirm residency evidence"
+      },
+      {
+        "id": "enrolment",
+        "label": "Full-time eligible STEM coursework enrolment, at least 36 credit points per teaching period",
+        "checks": [],
+        "evidence_note": "Full-time eligible STEM coursework enrolment, at least 36 credit points per teaching period"
+      }
+    ],
+    "eligible_cohorts": [
+      "First Nations"
+    ],
+    "deadline": null,
+    "study_commencement": "Payments described from Semester 1, 2027",
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.qut.edu.au/study/fees-and-scholarships/scholarships/csiro-indigenous-stem-scholarship",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Eligibility read; applications stated closed.",
+    "notes": "Do not infer an application deadline from payment dates. Formal provider confirmation of descent applies outside this app.",
+    "availability": "closed",
+    "skill_tags": [
+      "security_basics"
+    ]
+  },
+  {
+    "id": "fp-23",
+    "title": "Queensland Mentoring Pilot Program",
+    "provider": "Australian Information Security Association",
+    "category": "mentoring",
+    "location": "Queensland",
+    "description": "A cybersecurity mentoring pilot inviting Queensland mentors and mentees to express interest.",
+    "prerequisites": [
+      {
+        "id": "location",
+        "label": "Based in Queensland",
+        "checks": [
+          {
+            "field": "state",
+            "operator": "eq",
+            "value": "QLD"
+          }
+        ],
+        "evidence_note": "Based in Queensland"
+      },
+      {
+        "id": "selection",
+        "label": "Confirm current places and any additional selection conditions",
+        "checks": [],
+        "evidence_note": "Confirm current places and any additional selection conditions"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://aisa.org.au/public/Public/Branches/Brisbane/Mentoring-Pilot-Program.aspx",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Course or program listing checked; current application details need confirmation.",
+    "notes": "2026 pilot expression of interest confirmed. A place, matching outcome and closing date are not guaranteed.",
+    "availability": "unknown",
+    "skill_tags": [
+      "security_basics",
+      "risk_management"
+    ]
+  },
+  {
+    "id": "fp-24",
+    "title": "Women in Security Mentoring Program",
+    "provider": "Australian Women in Security Network",
+    "category": "mentoring",
+    "location": "Australia",
+    "description": "Mentoring for women developing careers in security.",
+    "prerequisites": [
+      {
+        "id": "age",
+        "label": "At least 18 years old",
+        "checks": [
+          {
+            "field": "age",
+            "operator": "gte",
+            "value": 18
+          }
+        ],
+        "evidence_note": "At least 18 years old"
+      },
+      {
+        "id": "cohort",
+        "label": "Provider women mentee, membership, Australian location and participation requirements need checking",
+        "checks": [],
+        "evidence_note": "Provider women mentee, membership, Australian location and participation requirements need checking"
+      }
+    ],
+    "eligible_cohorts": [],
+    "deadline": null,
+    "study_commencement": null,
+    "next_steps": [
+      "Open the provider page and confirm current entry and application details."
+    ],
+    "source_url": "https://www.awsn.org.au/Web/web/education-training/mentoring.aspx",
+    "source_checked_date": "2026-10-26",
+    "verification_status": "partially_verified",
+    "evidence_note": "Page states program on hold alongside older expression-of-interest information.",
+    "notes": "Program is on hold. Older mid-2025 references are not evidence of current availability. Gender is not collected here.",
+    "availability": "on_hold",
+    "skill_tags": [
+      "security_basics",
+      "risk_management"
+    ]
+  }
+]
