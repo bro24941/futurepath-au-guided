@@ -1,4 +1,4 @@
-"""Serve the website and the six-agent workflow on the local computer."""
+"""Serve the website and the six-agent workflow."""
 import logging
 import os
 from contextlib import asynccontextmanager
@@ -39,15 +39,22 @@ def create_app(llm: GoalLLM | None = None) -> FastAPI:
         service.close()
 
     api = FastAPI(title="FuturePath AU", lifespan=lifespan, docs_url=None, redoc_url=None)
-    api.add_middleware(TrustedHostMiddleware, allowed_hosts=["localhost", "127.0.0.1", "testserver"])
+    allowed_hosts = ["localhost", "127.0.0.1", "testserver"]
+    render_host = os.getenv("RENDER_EXTERNAL_HOSTNAME")
+    if render_host:
+        allowed_hosts.append(render_host)
+    api.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
 
     @api.middleware("http")
     async def boundaries(request: Request, call_next):
-        # Only the local page should submit the form, and submissions are small.
+        # Keep form submissions on the website's origin and limit their size.
         if request.method == "POST":
             origin = request.headers.get("origin")
-            if origin and origin != str(request.base_url).rstrip("/"):
-                return JSONResponse({"detail": "Use the local FuturePath AU page."}, status_code=403)
+            expected_origin = str(request.base_url).rstrip("/")
+            if render_host and request.url.hostname == render_host:
+                expected_origin = f"https://{render_host}"
+            if origin and origin != expected_origin:
+                return JSONResponse({"detail": "Use the FuturePath AU page to submit the form."}, status_code=403)
             chunks, size = [], 0
             async for chunk in request.stream():
                 size += len(chunk)
