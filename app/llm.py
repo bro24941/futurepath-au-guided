@@ -9,8 +9,8 @@ from google.genai import types
 from app.models import Goal
 
 LOGGER = logging.getLogger(__name__)
-DEFAULT_MODEL = "gemini-3.6-flash"
-DEFAULT_FALLBACK = "gemini-3.5-flash-lite"
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_FALLBACK = "gemini-3.6-flash"
 UNAVAILABLE = "AI unavailable, using rules only"
 
 
