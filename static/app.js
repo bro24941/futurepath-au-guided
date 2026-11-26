@@ -105,7 +105,7 @@ async function checkService() {
     $("service-status").textContent = info.llm_mode === "off" ? "Running with rules only." :
       info.api_key_configured ? "Gemini is set up. Check the agent details to see what ran." : "Running with rules only. No Gemini key is set.";
   } catch {
-    $("service-status").textContent = "The local service is unavailable. Open Launch_Website.cmd and try again.";
+    $("service-status").textContent = "The service is unavailable. Wait a moment and refresh the page.";
   }
 }
 
@@ -192,7 +192,7 @@ $("profile-form").addEventListener("submit", async event => {
     if (value !== "") profile[id] = type === "number" ? Number(value) : type === "bool" ? value === "true" : value;
   }
   try {
-    // The browser talks only to the local API. The API controls what can go to Gemini.
+    // The browser talks to FuturePath AU. The app controls what can go to Gemini.
     const response = await fetch("/api/pathway", {
       method: "POST", headers: { "Content-Type": "application/json" }, signal: request.signal,
       body: JSON.stringify({ goal, profile, adult_tester: $("adult").checked,
@@ -212,7 +212,7 @@ $("profile-form").addEventListener("submit", async event => {
     showResults(true);
   } catch (error) {
     if (controller === request && error.name !== "AbortError") {
-      $("error").textContent = error instanceof TypeError ? "We couldn’t reach the local service. Open Launch_Website.cmd and try again." : error instanceof SyntaxError ? "The service returned an unexpected response. Try again." : error.message;
+      $("error").textContent = error instanceof TypeError ? "We couldn’t reach the service. Wait a moment and try again." : error instanceof SyntaxError ? "The service returned an unexpected response. Try again." : error.message;
     }
   } finally {
     if (controller === request) finishRequest();
